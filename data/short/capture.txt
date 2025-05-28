@@ -1,0 +1,6 @@
+^{
+    "TableName": "alternator_Test_1733403516337",
+    "Key": {"p": {"S": "(.*?)"}},
+    "UpdateExpression": "SET a = :val",
+    "ExpressionAttributeValues": {":val": {"S": "(.*?)"}}
+}$

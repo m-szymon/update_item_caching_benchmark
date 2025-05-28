@@ -1,0 +1,17 @@
+{
+    "TableName": "alternator_Test_1733403516337",
+    "Key": {"p": {"S": "2EE8RIGMHP"}},
+    "UpdateExpression": "SET a = :val",
+    "ExpressionAttributeValues": {":val": {
+        "M": {
+            "A": {"S":"hey"},
+            "B": {"S":"hey"},
+            "C": {"S":"hey"},
+            "D": {"S":"hey"},
+            "E": {"S":"hey"},
+            "F": {"S":"hey"},
+            "G": {"S":"hey"},
+            "H": {"S":"hey"}
+        }
+    }}
+}

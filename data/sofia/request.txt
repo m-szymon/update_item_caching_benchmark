@@ -1,0 +1,26 @@
+{
+    "TableName": "Orders",
+    "Key": {
+        "orderId": {
+            "S": "order-12345"
+        }
+    },
+    "ConsistentRead": true,
+    "ReturnConsumedCapacity": "TOTAL",
+    "ProjectionExpression": "#oid, customerInfo.#name, #items[0], orderTotal, #status",
+    "ExpressionAttributeNames": {
+        "#oid": "orderId",
+        "#name": "name",
+        "#items": "items",
+        "#status": "status"
+    },
+    "UpdateExpression": "#status = :statusValue AND orderTotal > :val",
+    "ExpressionAttributeValues": {
+        ":statusValue": {
+            "S": "SHIPPED"
+        },
+        ":val": {
+            "N": "100.00"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+--- hyperscan1/CMakeLists.txt	2025-05-25 22:28:01.338225518 +0200
++++ hyperscan2/CMakeLists.txt	2025-05-25 22:28:01.332330901 +0200
+@@ -497,10 +497,10 @@
+ endif()
+ 
+ add_subdirectory(unit)
+-if (EXISTS ${CMAKE_SOURCE_DIR}/tools/CMakeLists.txt)
++if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/tools/CMakeLists.txt)
+     add_subdirectory(tools)
+ endif()
+-if (EXISTS ${CMAKE_SOURCE_DIR}/chimera/CMakeLists.txt AND BUILD_CHIMERA)
++if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/chimera/CMakeLists.txt AND BUILD_CHIMERA)
+     add_subdirectory(chimera)
+ endif()
+ endif()
+@@ -549,10 +549,10 @@
+ endif()
+ 
+ add_subdirectory(unit)
+-if (EXISTS ${CMAKE_SOURCE_DIR}/tools/CMakeLists.txt)
++if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/tools/CMakeLists.txt)
+     add_subdirectory(tools)
+ endif()
+-if (EXISTS ${CMAKE_SOURCE_DIR}/chimera/CMakeLists.txt AND BUILD_CHIMERA)
++if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/chimera/CMakeLists.txt AND BUILD_CHIMERA)
+     add_subdirectory(chimera)
+ endif()
+ endif()
